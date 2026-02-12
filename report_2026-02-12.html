@@ -1,0 +1,457 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>GamePulse · 分类资讯洞察</title>
+<meta name="description" content="按【类别】分栏展示 · 单页 HTML（Jinja2 渲染）"/>
+
+<style>
+:root{
+  --bg:#0b1020;
+  --text:rgba(255,255,255,.92);
+  --muted:rgba(255,255,255,.65);
+  --line:rgba(255,255,255,.12);
+  --card:rgba(255,255,255,.06);
+  --radius:18px;
+  --shadow:0 16px 50px rgba(0,0,0,.45);
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:system-ui,-apple-system,"PingFang SC","Microsoft Yahei";
+  color:var(--text);
+  background:
+    radial-gradient(900px 400px at 20% 0%, rgba(124,58,237,.35), transparent 60%),
+    radial-gradient(800px 420px at 85% 10%, rgba(6,182,212,.25), transparent 60%),
+    linear-gradient(180deg,#060916,#0b1020,#060916);
+}
+
+a{color:inherit;text-decoration:none}
+a:hover{text-decoration:underline}
+
+.wrap{max-width:1120px;margin:auto;padding:28px 18px 60px}
+h1{margin:0;font-size:26px}
+.sub{color:var(--muted);font-size:13px;margin-top:6px}
+
+.topbar{
+  display:flex;
+  justify-content:space-between;
+  gap:16px;
+  flex-wrap:wrap;
+  align-items:flex-end;
+}
+.pill{
+  border:1px solid var(--line);
+  padding:8px 12px;
+  border-radius:999px;
+  font-size:12px;
+  color:var(--muted);
+  background:rgba(255,255,255,.04)
+}
+
+.section{margin-top:34px}
+.section-head{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  margin-bottom:16px;
+}
+.section-head h2{margin:0;font-size:20px}
+.section-head .count{
+  font-size:12px;
+  padding:6px 10px;
+  border-radius:999px;
+  border:1px solid var(--line);
+  color:var(--muted);
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(12,1fr);
+  gap:14px;
+}
+
+.card{
+  grid-column:span 12;
+  border-radius:var(--radius);
+  border:1px solid var(--line);
+  background:var(--card);
+  box-shadow:var(--shadow);
+  overflow:hidden;
+}
+@media(min-width:860px){.card{grid-column:span 6}}
+
+.cover{height:180px;background:rgba(255,255,255,.05)}
+.cover img{width:100%;height:100%;object-fit:cover;display:block}
+
+.content{
+  padding:14px;
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+.title{margin:0;font-size:16px;line-height:1.4}
+
+.tags{display:flex;gap:8px;flex-wrap:wrap}
+.tag{
+  font-size:12px;
+  padding:6px 10px;
+  border-radius:999px;
+  border:1px solid var(--line);
+  background:rgba(255,255,255,.04);
+  color:var(--muted);
+}
+
+.summary{font-size:13px;color:var(--muted);line-height:1.6;margin:0}
+
+details{
+  border:1px solid var(--line);
+  border-radius:14px;
+  padding:10px;
+  background:rgba(255,255,255,.03);
+}
+summary{cursor:pointer;font-size:13px}
+.refer-list{
+  margin-top:10px;
+  padding:0;
+  list-style:none;
+}
+.refer-item{
+  margin-top:8px;
+  border:1px solid var(--line);
+  border-radius:10px;
+  padding:10px;
+  background:rgba(255,255,255,.04);
+  font-size:13px;
+  line-height:1.5;
+}
+
+footer{
+  margin-top:40px;
+  text-align:center;
+  font-size:12px;
+  color:var(--muted);
+}
+</style>
+</head>
+
+<body>
+<div class="wrap">
+
+  <header class="topbar">
+    <div>
+      <h1>GamePulse · 分类资讯洞察</h1>
+      <div class="sub">按【类别】分栏展示 · 单页 HTML（Jinja2 渲染）</div>
+    </div>
+    <div style="display:flex;gap:10px;flex-wrap:wrap;justify-content:flex-end">
+      <div class="pill">生成时间：2026-02-12 01:51</div>
+      <div class="pill">文章数：7</div>
+    </div>
+  </header>
+
+  
+  
+  
+    
+    
+      
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+
+  
+    
+    <section class="section">
+      <div class="section-head">
+        <h2>非小遊戲</h2>
+        <span class="count">7 篇</span>
+      </div>
+
+      <div class="grid">
+        
+          <article class="card">
+            <div class="cover">
+              
+                <img src="https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blte04e49a6e88de2b6/698d1c024db40e847fab25cf/ss_1873419f5a46bd3f5bd1776e78b8aaf75656ecc6.1920x1080.jpg?width=1280&auto=webp&quality=80&disable=upscale" alt="Wildlight Entertainment 在首款遊戲發售幾週內裁員" loading="lazy" referrerpolicy="no-referrer">
+              
+            </div>
+
+            <div class="content">
+              <h3 class="title">
+                
+                  <a href="https://www.gamedeveloper.com/business/wildlight-entertainment-reportedly-lays-off-staff-within-weeks-of-first-game-s-launch" target="_blank" rel="noreferrer noopener">Wildlight Entertainment 在首款遊戲發售幾週內裁員</a>
+                
+              </h3>
+
+              <div class="tags">
+                <span class="tag">借鉴点 1</span>
+                <span class="tag">外链</span>
+              </div>
+
+              
+                <p class="summary">由前 Respawn 核心成員創立的新工作室 Wildlight Entertainment 在首款遊戲發布後不久即陷入財務困境，導致 100 多名團隊成員中的絕大部分被裁。這凸顯了初創工作室在大型項目發布初期的極高風險。</p>
+              
+
+              
+                <details open>
+                  <summary>可借鉴内容</summary>
+                  <ul class="refer-list">
+                    
+                      <li class="refer-item">1. 初創工作室規模管控 (【市場推廣】) - 關鍵點：100+人團隊規模 → 建議小遊戲或新興工作室在首個項目驗證前，嚴格控制核心團隊規模，避免發布後現金流斷裂。</li>
+                    
+                  </ul>
+                </details>
+              
+            </div>
+          </article>
+        
+          <article class="card">
+            <div class="cover">
+              
+                <img src="https://mmbiz.qpic.cn/mmbiz_jpg/LvguPLSUuXf0ddVBuur4GIJyibvmcicRWXKYhSKKiceadW7EBvBjwRzJ4bcXde1zfmJy3WfFOeMPsUFkibNCzueMX35RBosYFdwmXLUSbnndl88/300?wxtype=jpeg&wxfrom=0" alt="大廠轉向？上市遊戲公司開始佈局小遊戲賽道" loading="lazy" referrerpolicy="no-referrer">
+              
+            </div>
+
+            <div class="content">
+              <h3 class="title">
+                
+                  <a href="http://mp.weixin.qq.com/s?__biz=MjM5NTIzNjA2MA==&mid=2651801341&idx=2&sn=0eab72de155d148b3b36d5406b7107ba&chksm=bcecda8b9a827a1a2e53b673cb2264129bffc5bcb9eb16f6ebfc7942aa66e50e6ed259b75c6f&scene=0&xtrack=1#rd" target="_blank" rel="noreferrer noopener">大廠轉向？上市遊戲公司開始佈局小遊戲賽道</a>
+                
+              </h3>
+
+              <div class="tags">
+                <span class="tag">借鉴点 1</span>
+                <span class="tag">外链</span>
+              </div>
+
+              
+                <p class="summary">分析了某上市大廠將戰略重心向小遊戲傾斜的動向。雖然原文鏈接包含驗證內容，但標題明確揭示了行業頭部玩家正試圖通過小遊戲尋求新的增長曲線。</p>
+              
+
+              
+                <details open>
+                  <summary>可借鉴内容</summary>
+                  <ul class="refer-list">
+                    
+                      <li class="refer-item">1. 存量市場轉型策略 (【運營策略】) - 關鍵點：上市大廠進場 → 預示小遊戲市場進入品質與資源競爭階段，中小團隊應聚焦細分題材的差異化運營。</li>
+                    
+                  </ul>
+                </details>
+              
+            </div>
+          </article>
+        
+          <article class="card">
+            <div class="cover">
+              
+                <img src="https://media.pocketgamer.com/artwork/na-38088-1767040586/backpack-battles-ios-announcement-header.jpg" alt="《背包亂鬥》上線雙端：將背包整理轉化為核心競技玩法" loading="lazy" referrerpolicy="no-referrer">
+              
+            </div>
+
+            <div class="content">
+              <h3 class="title">
+                
+                  <a href="https://www.pocketgamer.com/backpack-battles/official-launch-android-ios/" target="_blank" rel="noreferrer noopener">《背包亂鬥》上線雙端：將背包整理轉化為核心競技玩法</a>
+                
+              </h3>
+
+              <div class="tags">
+                <span class="tag">借鉴点 2</span>
+                <span class="tag">外链</span>
+              </div>
+
+              
+                <p class="summary">《背包亂鬥》正式登陸手遊。該作創新地將傳統 RPG 中的輔助功能「整理背包」提升為核心戰略玩法。玩家不直接控制戰鬥，而是通過合理排布道具觸發連鎖效應。</p>
+              
+
+              
+                <details open>
+                  <summary>可借鉴内容</summary>
+                  <ul class="refer-list">
+                    
+                      <li class="refer-item">1. 「整理+對戰」核心機制 (【運營策略】) - 關鍵點：整理背包即戰鬥力 → 適用於研發成本有限的小遊戲項目，通過高度策略化的靜態UI交互代替複雜動作表現。</li>
+                    
+                      <li class="refer-item">2. 觸感與反饋設計 (【技術實現】) - 關鍵點：物品擺放的觸覺反饋 → 在 H5 環境下可通過優化拖拽吸附與連線動效，提升玩家在策略組合時的成就感。</li>
+                    
+                  </ul>
+                </details>
+              
+            </div>
+          </article>
+        
+          <article class="card">
+            <div class="cover">
+              
+                <img src="https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt27b0008cc463ca7d/6984a7e240bae8279145ebbd/New_Project_(18).png?width=1280&auto=webp&quality=80&disable=upscale" alt="Roblox 發佈 AI 驅動的場景與物體生成模型" loading="lazy" referrerpolicy="no-referrer">
+              
+            </div>
+
+            <div class="content">
+              <h3 class="title">
+                
+                  <a href="https://www.gamedeveloper.com/business/roblox-announces-ai-powered-object-scene-creation-model" target="_blank" rel="noreferrer noopener">Roblox 發佈 AI 驅動的場景與物體生成模型</a>
+                
+              </h3>
+
+              <div class="tags">
+                <span class="tag">借鉴点 2</span>
+                <span class="tag">外链</span>
+              </div>
+
+              
+                <p class="summary">Roblox 宣佈開發新的 AI 模型，支持創作者自動生成資產、環境、代碼和動畫。該技術旨在實現大規模、照片級真實感的虛擬體驗，降低 UGC 創作門檻。</p>
+              
+
+              
+                <details open>
+                  <summary>可借鉴内容</summary>
+                  <ul class="refer-list">
+                    
+                      <li class="refer-item">1. AI 資產自動化管線 (【技術實現】) - 關鍵點：生成資產、環境及代碼 → 建議小遊戲開發者集成 AI 插件，提升地圖關卡與基礎代碼的生成效率，加速產品迭代。</li>
+                    
+                      <li class="refer-item">2. 用戶側 UGC 工具集成 (【運營策略】) - 關鍵點：賦能非專業創作者 → 可在小遊戲中增加簡易 AI 裝修或地圖編輯功能，大幅提升用戶留存與社區內容豐富度。</li>
+                    
+                  </ul>
+                </details>
+              
+            </div>
+          </article>
+        
+          <article class="card">
+            <div class="cover">
+              
+                <img src="https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/bltbe6266cec5a956ff/6985d6323bd30ef1026515ac/Star_Trek_Fleet_Command_Header.png?width=1280&auto=webp&quality=80&disable=upscale" alt="Scopely 證實在《星際迷航：艦隊指揮》廣告中使用生成式 AI" loading="lazy" referrerpolicy="no-referrer">
+              
+            </div>
+
+            <div class="content">
+              <h3 class="title">
+                
+                  <a href="https://www.gamedeveloper.com/marketing/scopely-confirms-it-used-generative-ai-to-advertise-star-trek-fleet-command" target="_blank" rel="noreferrer noopener">Scopely 證實在《星際迷航：艦隊指揮》廣告中使用生成式 AI</a>
+                
+              </h3>
+
+              <div class="tags">
+                <span class="tag">借鉴点 1</span>
+                <span class="tag">外链</span>
+              </div>
+
+              
+                <p class="summary">Scopely 承認其熱門遊戲在營銷活動中運用了生成式 AI。儘管面臨版權爭議，但 AI 在廣告素材產出中的高效性已得到大廠驗證，成為降低買量成本的重要手段。</p>
+              
+
+              
+                <details open>
+                  <summary>可借鉴内容</summary>
+                  <ul class="refer-list">
+                    
+                      <li class="refer-item">1. AI 買量素材生產 (【市場推廣】) - 關鍵點：生成式 AI 廣告 → 用於小遊戲快速生成大量 A/B Test 廣告素材，通過算法篩選高點擊率方案，降低獲客成本。</li>
+                    
+                  </ul>
+                </details>
+              
+            </div>
+          </article>
+        
+          <article class="card">
+            <div class="cover">
+              
+                <img src="https://media.pocketgamer.com/artwork/na-38201-1770830761/brain-test-valentines-day-keyvis.jpg" alt="腦力測試：經典微型謎題遊戲的長青秘訣" loading="lazy" referrerpolicy="no-referrer">
+              
+            </div>
+
+            <div class="content">
+              <h3 class="title">
+                
+                  <a href="https://www.pocketgamer.com/brain-test-tricky-puzzles/valentines-day-event/" target="_blank" rel="noreferrer noopener">腦力測試：經典微型謎題遊戲的長青秘訣</a>
+                
+              </h3>
+
+              <div class="tags">
+                <span class="tag">借鉴点 1</span>
+                <span class="tag">外链</span>
+              </div>
+
+              
+                <p class="summary">自2019年發布以來，《Brain Test》憑借微型謎題模式保持熱度。其情人節更新展示了如何通過持續的節日活動與細分關卡設計維持龐大的休閒用戶群體。</p>
+              
+
+              
+                <details open>
+                  <summary>可借鉴内容</summary>
+                  <ul class="refer-list">
+                    
+                      <li class="refer-item">1. 節日主題內容驅動 (【運營策略】) - 關鍵點：情人節專屬更新 → 建議小遊戲項目建立「輕更新」模板，每逢節日快速更換UI主題與關卡，維持產品生命週期。</li>
+                    
+                  </ul>
+                </details>
+              
+            </div>
+          </article>
+        
+          <article class="card">
+            <div class="cover">
+              
+                <img src="https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt6b65ca724af55bed/698b54955707be848060f169/Krafton_Header.png?width=1280&auto=webp&quality=80&disable=upscale" alt="Krafton 創紀錄營收與 AI 機器人願景" loading="lazy" referrerpolicy="no-referrer">
+              
+            </div>
+
+            <div class="content">
+              <h3 class="title">
+                
+                  <a href="https://www.gamedeveloper.com/production/krafton-delivers-record-annual-revenue-and-says-its-ai-tech-could-birth-humanoid-robots-" target="_blank" rel="noreferrer noopener">Krafton 創紀錄營收與 AI 機器人願景</a>
+                
+              </h3>
+
+              <div class="tags">
+                <span class="tag">借鉴点 1</span>
+                <span class="tag">外链</span>
+              </div>
+
+              
+                <p class="summary">Krafton 財報顯示年度營收創新高。公司計劃將「在遊戲中驗證的 AI 能力」轉移至現實世界，並持續推動旗下產品向虛幻引擎 5 升級及 AI 化轉型。</p>
+              
+
+              
+                <details open>
+                  <summary>可借鉴内容</summary>
+                  <ul class="refer-list">
+                    
+                      <li class="refer-item">1. 遊戲驗證 AI 算法 (【技術實現】) - 關鍵點：遊戲 validated AI → 小遊戲可嘗試引入輕量化 AI 陪玩或 NPC 對話系統，提升單機類小遊戲的情感鏈接與可玩性。</li>
+                    
+                  </ul>
+                </details>
+              
+            </div>
+          </article>
+        
+      </div>
+    </section>
+  
+
+  <footer>
+    © GamePulse pipeline
+  </footer>
+
+</div>
+</body>
+</html>
