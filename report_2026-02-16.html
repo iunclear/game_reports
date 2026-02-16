@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>GamePulse · 分类资讯洞察</title>
+<meta name="description" content="按【类别】分栏展示 · 单页 HTML（Jinja2 渲染）"/>
+
+<style>
+:root{
+  --bg:#0b1020;
+  --text:rgba(255,255,255,.92);
+  --muted:rgba(255,255,255,.65);
+  --line:rgba(255,255,255,.12);
+  --card:rgba(255,255,255,.06);
+  --radius:18px;
+  --shadow:0 16px 50px rgba(0,0,0,.45);
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:system-ui,-apple-system,"PingFang SC","Microsoft Yahei";
+  color:var(--text);
+  background:
+    radial-gradient(900px 400px at 20% 0%, rgba(124,58,237,.35), transparent 60%),
+    radial-gradient(800px 420px at 85% 10%, rgba(6,182,212,.25), transparent 60%),
+    linear-gradient(180deg,#060916,#0b1020,#060916);
+}
+
+a{color:inherit;text-decoration:none}
+a:hover{text-decoration:underline}
+
+.wrap{max-width:1120px;margin:auto;padding:28px 18px 60px}
+h1{margin:0;font-size:26px}
+.sub{color:var(--muted);font-size:13px;margin-top:6px}
+
+.topbar{
+  display:flex;
+  justify-content:space-between;
+  gap:16px;
+  flex-wrap:wrap;
+  align-items:flex-end;
+}
+.pill{
+  border:1px solid var(--line);
+  padding:8px 12px;
+  border-radius:999px;
+  font-size:12px;
+  color:var(--muted);
+  background:rgba(255,255,255,.04)
+}
+
+.section{margin-top:34px}
+.section-head{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  margin-bottom:16px;
+}
+.section-head h2{margin:0;font-size:20px}
+.section-head .count{
+  font-size:12px;
+  padding:6px 10px;
+  border-radius:999px;
+  border:1px solid var(--line);
+  color:var(--muted);
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(12,1fr);
+  gap:14px;
+}
+
+.card{
+  grid-column:span 12;
+  border-radius:var(--radius);
+  border:1px solid var(--line);
+  background:var(--card);
+  box-shadow:var(--shadow);
+  overflow:hidden;
+}
+@media(min-width:860px){.card{grid-column:span 6}}
+
+.cover{height:180px;background:rgba(255,255,255,.05)}
+.cover img{width:100%;height:100%;object-fit:cover;display:block}
+
+.content{
+  padding:14px;
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+.title{margin:0;font-size:16px;line-height:1.4}
+
+.tags{display:flex;gap:8px;flex-wrap:wrap}
+.tag{
+  font-size:12px;
+  padding:6px 10px;
+  border-radius:999px;
+  border:1px solid var(--line);
+  background:rgba(255,255,255,.04);
+  color:var(--muted);
+}
+
+.summary{font-size:13px;color:var(--muted);line-height:1.6;margin:0}
+
+details{
+  border:1px solid var(--line);
+  border-radius:14px;
+  padding:10px;
+  background:rgba(255,255,255,.03);
+}
+summary{cursor:pointer;font-size:13px}
+.refer-list{
+  margin-top:10px;
+  padding:0;
+  list-style:none;
+}
+.refer-item{
+  margin-top:8px;
+  border:1px solid var(--line);
+  border-radius:10px;
+  padding:10px;
+  background:rgba(255,255,255,.04);
+  font-size:13px;
+  line-height:1.5;
+}
+
+footer{
+  margin-top:40px;
+  text-align:center;
+  font-size:12px;
+  color:var(--muted);
+}
+</style>
+</head>
+
+<body>
+<div class="wrap">
+
+  <header class="topbar">
+    <div>
+      <h1>GamePulse · 分类资讯洞察</h1>
+      <div class="sub">按【类别】分栏展示 · 单页 HTML（Jinja2 渲染）</div>
+    </div>
+    <div style="display:flex;gap:10px;flex-wrap:wrap;justify-content:flex-end">
+      <div class="pill">生成时间：2026-02-16 06:02</div>
+      <div class="pill">文章数：2</div>
+    </div>
+  </header>
+
+  
+  
+  
+    
+    
+      
+    
+  
+    
+    
+  
+
+  
+    
+    <section class="section">
+      <div class="section-head">
+        <h2>小程序原生</h2>
+        <span class="count">2 篇</span>
+      </div>
+
+      <div class="grid">
+        
+          <article class="card">
+            <div class="cover">
+              
+                <img src="https://mmbiz.qpic.cn/mmbiz_jpg/jV8YHDicAiasZw1XhfykiboWPLy2WTSmfkhhlk0cx4Meib14delOiczYnueC9d4sTx6tHUqczahJHmL9qeESfTOz2897z4gzZP5uiayKY1PJZEKzw/640?wxtype=jpeg&wxfrom=0" alt="明星代言与节日营销：刘涛助力《三角洲行动》春节破圈" loading="lazy" referrerpolicy="no-referrer">
+              
+            </div>
+
+            <div class="content">
+              <h3 class="title">
+                
+                  <a href="http://mp.weixin.qq.com/s?__biz=MjM5OTc2ODUxMw==&mid=2649996912&idx=1&sn=5a43321408f1c8f7f6dd5ff71ca85f54&chksm=be5452d12fe8c3ffd2d2a1342ec785314ce690a8fbf803556171dc39aa597a0ffde35b18e1a6&scene=0&xtrack=1#rd" target="_blank" rel="noreferrer noopener">明星代言与节日营销：刘涛助力《三角洲行动》春节破圈</a>
+                
+              </h3>
+
+              <div class="tags">
+                <span class="tag">借鉴点 2</span>
+                <span class="tag">外链</span>
+              </div>
+
+              
+                <p class="summary">文章详细分析了《三角洲行动》在春节期间通过明星刘涛的代言及深度联动（如“六套”顶级装备概念），将硬核战术竞技游戏推向大众视野的策略。通过结合春节传统文化与游戏内福利，成功实现了品牌声量与用户活跃的双增长。</p>
+              
+
+              
+                <details open>
+                  <summary>可借鉴内容</summary>
+                  <ul class="refer-list">
+                    
+                      <li class="refer-item">1. 硬核游戏大众化营销 (【市场推广】) - 关键点：利用国民级明星刘涛与硬核装备“六套”的反差结合 → 建议在硬核竞技类游戏进行节庆大版本宣传时，通过反差感代言人触达泛用户。</li>
+                    
+                      <li class="refer-item">2. 节日版本内容设计 (【运营策略】) - 关键点：结合春节节点推出“过个肥年”等主题福利 → 适用于FPS或竞技类游戏利用大额资源返利提升长假期间的用户留存。</li>
+                    
+                  </ul>
+                </details>
+              
+            </div>
+          </article>
+        
+          <article class="card">
+            <div class="cover">
+              
+                <img src="https://mmbiz.qpic.cn/mmbiz_jpg/LvguPLSUuXenMKqPFic4Tzjdx2EjANco5K3akMskHThnjbh6cyBJdKL14ZA2ZDRQ7l5JQJBnVOurc63bQiaNicAicIV02EM5DY3lx8QVwHRoRuM/640?wxtype=jpeg&wxfrom=0" alt="年前行业人才与机遇盘点：游戏人的“Offer”建议" loading="lazy" referrerpolicy="no-referrer">
+              
+            </div>
+
+            <div class="content">
+              <h3 class="title">
+                
+                  <a href="http://mp.weixin.qq.com/s?__biz=MjM5NTIzNjA2MA==&mid=2651801518&idx=1&sn=2533b0dc40a59e7dbf10cfeb917a24b9&chksm=bc4e3f12378b1496642c38e93b22e76c261c9519f5d5d28b1aec909ae1bc91958b8045aef1f8&scene=0&xtrack=1#rd" target="_blank" rel="noreferrer noopener">年前行业人才与机遇盘点：游戏人的“Offer”建议</a>
+                
+              </h3>
+
+              <div class="tags">
+                <span class="tag">借鉴点 2</span>
+                <span class="tag">外链</span>
+              </div>
+
+              
+                <p class="summary">文章针对春节前的游戏行业人才市场进行了深度梳理，提供了针对从业者的职场建议与行业机会。内容聚焦于当前市场环境下的招聘需求、热门技术岗位趋势，为游戏公司的人才储备与从业者的职业规划提供参考。</p>
+              
+
+              
+                <details open>
+                  <summary>可借鉴内容</summary>
+                  <ul class="refer-list">
+                    
+                      <li class="refer-item">1. 行业人才招聘洞察 (【运营策略】) - 关键点：年前特定岗位的招聘窗口期与需求特征 → 应用于企业制定年后扩编计划或人才反向挖掘策略。</li>
+                    
+                      <li class="refer-item">2. 职业成长路径优化 (【其他】) - 关键点：针对当前热门赛道（如小游戏、AI应用）的技能需求 → 建议研发团队在技术选型时参考最新人才市场需求，进行内部技能升级培训。</li>
+                    
+                  </ul>
+                </details>
+              
+            </div>
+          </article>
+        
+      </div>
+    </section>
+  
+
+  <footer>
+    © GamePulse pipeline
+  </footer>
+
+</div>
+</body>
+</html>
