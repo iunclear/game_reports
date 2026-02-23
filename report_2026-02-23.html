@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>GamePulse · 分类资讯洞察</title>
+<meta name="description" content="按【类别】分栏展示 · 单页 HTML（Jinja2 渲染）"/>
+
+<style>
+:root{
+  --bg:#0b1020;
+  --text:rgba(255,255,255,.92);
+  --muted:rgba(255,255,255,.65);
+  --line:rgba(255,255,255,.12);
+  --card:rgba(255,255,255,.06);
+  --radius:18px;
+  --shadow:0 16px 50px rgba(0,0,0,.45);
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:system-ui,-apple-system,"PingFang SC","Microsoft Yahei";
+  color:var(--text);
+  background:
+    radial-gradient(900px 400px at 20% 0%, rgba(124,58,237,.35), transparent 60%),
+    radial-gradient(800px 420px at 85% 10%, rgba(6,182,212,.25), transparent 60%),
+    linear-gradient(180deg,#060916,#0b1020,#060916);
+}
+
+a{color:inherit;text-decoration:none}
+a:hover{text-decoration:underline}
+
+.wrap{max-width:1120px;margin:auto;padding:28px 18px 60px}
+h1{margin:0;font-size:26px}
+.sub{color:var(--muted);font-size:13px;margin-top:6px}
+
+.topbar{
+  display:flex;
+  justify-content:space-between;
+  gap:16px;
+  flex-wrap:wrap;
+  align-items:flex-end;
+}
+.pill{
+  border:1px solid var(--line);
+  padding:8px 12px;
+  border-radius:999px;
+  font-size:12px;
+  color:var(--muted);
+  background:rgba(255,255,255,.04)
+}
+
+.section{margin-top:34px}
+.section-head{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  margin-bottom:16px;
+}
+.section-head h2{margin:0;font-size:20px}
+.section-head .count{
+  font-size:12px;
+  padding:6px 10px;
+  border-radius:999px;
+  border:1px solid var(--line);
+  color:var(--muted);
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(12,1fr);
+  gap:14px;
+}
+
+.card{
+  grid-column:span 12;
+  border-radius:var(--radius);
+  border:1px solid var(--line);
+  background:var(--card);
+  box-shadow:var(--shadow);
+  overflow:hidden;
+}
+@media(min-width:860px){.card{grid-column:span 6}}
+
+.cover{height:180px;background:rgba(255,255,255,.05)}
+.cover img{width:100%;height:100%;object-fit:cover;display:block}
+
+.content{
+  padding:14px;
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+.title{margin:0;font-size:16px;line-height:1.4}
+
+.tags{display:flex;gap:8px;flex-wrap:wrap}
+.tag{
+  font-size:12px;
+  padding:6px 10px;
+  border-radius:999px;
+  border:1px solid var(--line);
+  background:rgba(255,255,255,.04);
+  color:var(--muted);
+}
+
+.summary{font-size:13px;color:var(--muted);line-height:1.6;margin:0}
+
+details{
+  border:1px solid var(--line);
+  border-radius:14px;
+  padding:10px;
+  background:rgba(255,255,255,.03);
+}
+summary{cursor:pointer;font-size:13px}
+.refer-list{
+  margin-top:10px;
+  padding:0;
+  list-style:none;
+}
+.refer-item{
+  margin-top:8px;
+  border:1px solid var(--line);
+  border-radius:10px;
+  padding:10px;
+  background:rgba(255,255,255,.04);
+  font-size:13px;
+  line-height:1.5;
+}
+
+footer{
+  margin-top:40px;
+  text-align:center;
+  font-size:12px;
+  color:var(--muted);
+}
+</style>
+</head>
+
+<body>
+<div class="wrap">
+
+  <header class="topbar">
+    <div>
+      <h1>GamePulse · 分类资讯洞察</h1>
+      <div class="sub">按【类别】分栏展示 · 单页 HTML（Jinja2 渲染）</div>
+    </div>
+    <div style="display:flex;gap:10px;flex-wrap:wrap;justify-content:flex-end">
+      <div class="pill">生成时间：2026-02-23 06:01</div>
+      <div class="pill">文章数：3</div>
+    </div>
+  </header>
+
+  
+  
+  
+    
+    
+      
+    
+  
+    
+    
+  
+    
+    
+      
+    
+  
+
+  
+    
+    <section class="section">
+      <div class="section-head">
+        <h2>Unity</h2>
+        <span class="count">2 篇</span>
+      </div>
+
+      <div class="grid">
+        
+          <article class="card">
+            <div class="cover">
+              
+                <img src="https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt865d66ce628b4a2d/699736539c403700088d6cce/Patch_Notes_41_Header.png?width=1280&auto=webp&quality=80&disable=upscale" alt="Godot 开发者对 AI 垃圾内容的担忧及 Unity 生成式 AI 愿景" loading="lazy" referrerpolicy="no-referrer">
+              
+            </div>
+
+            <div class="content">
+              <h3 class="title">
+                
+                  <a href="https://www.gamedeveloper.com/business/godot-veteran-laments-ai-slop-highguard-s-mystery-financing-and-a-big-doc-for-big-hops-patch-notes-41" target="_blank" rel="noreferrer noopener">Godot 开发者对 AI 垃圾内容的担忧及 Unity 生成式 AI 愿景</a>
+                
+              </h3>
+
+              <div class="tags">
+                <span class="tag">借鉴点 2</span>
+                <span class="tag">外链</span>
+              </div>
+
+              
+                <p class="summary">本期简报探讨了 Godot 资深开发者对 AI 生成低质量内容的批判，同时提及 Unity 首席执行官宣称开发者未来将能通过生成式 AI 提示词（Prompt）直接“催生”游戏。此外，还涉及了 Highguard 的神秘融资动态。</p>
+              
+
+              
+                <details open>
+                  <summary>可借鉴内容</summary>
+                  <ul class="refer-list">
+                    
+                      <li class="refer-item">1. 生成式 AI 辅助原型验证 (【新技术应用】) - 关键点：通过 AI 提示词生成游戏雏形 → 应用于小游戏立项阶段的快速 Demo 跑通，降低前期开发成本。</li>
+                    
+                      <li class="refer-item">2. AI 内容质量风控 (【运营策略】) - 关键点：警惕 AI 垃圾内容 (AI slop) 对平台生态的影响 → 在 UGC 游戏社区中建立针对 AI 生成内容的审核与筛选机制。</li>
+                    
+                  </ul>
+                </details>
+              
+            </div>
+          </article>
+        
+          <article class="card">
+            <div class="cover">
+              
+                <img src="https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt416000ed89b80720/69934f2aeac83e0008690b71/Unity_AI_Header.png?width=1280&auto=webp&quality=80&disable=upscale" alt="Unity 称其 AI 技术将很快能通过提示词生成完整的休闲游戏" loading="lazy" referrerpolicy="no-referrer">
+              
+            </div>
+
+            <div class="content">
+              <h3 class="title">
+                
+                  <a href="https://www.gamedeveloper.com/programming/unity-says-its-ai-tech-will-soon-be-able-to-prompt-full-casual-games-into-existence-" target="_blank" rel="noreferrer noopener">Unity 称其 AI 技术将很快能通过提示词生成完整的休闲游戏</a>
+                
+              </h3>
+
+              <div class="tags">
+                <span class="tag">借鉴点 2</span>
+                <span class="tag">外链</span>
+              </div>
+
+              
+                <p class="summary">Unity 首席执行官 Matt Bromberg 表示，Unity 的 AI 技术正致力于让非编程人员和资深开发者都能通过指令构建完整的休闲游戏，旨在打破技术壁垒并彻底改变游戏生产流程。</p>
+              
+
+              
+                <details open>
+                  <summary>可借鉴内容</summary>
+                  <ul class="refer-list">
+                    
+                      <li class="refer-item">1. 指令驱动式游戏生产 (【新技术应用】) - 关键点：Prompt 生成完整游戏逻辑 → 建议针对极简休闲赛道（如合成类、跑酷类）探索“零代码”开发管线。</li>
+                    
+                      <li class="refer-item">2. 跨职能创作赋能 (【美术生产】) - 关键点：赋能非技术人员（如策划、美术）直接产出可运行逻辑 → 在研发团队内部推广 AI 工具，加速玩法迭代速度。</li>
+                    
+                  </ul>
+                </details>
+              
+            </div>
+          </article>
+        
+      </div>
+    </section>
+  
+    
+    <section class="section">
+      <div class="section-head">
+        <h2>小程序原生</h2>
+        <span class="count">1 篇</span>
+      </div>
+
+      <div class="grid">
+        
+          <article class="card">
+            <div class="cover">
+              
+                <img src="https://mmbiz.qpic.cn/mmbiz_jpg/LvguPLSUuXc35PibXsL4t2ESywlXInGLuuq7dDAx9gia7hPJSgicFRDWxePrbRqFkp4hyL2tnDJLayJibia21DlNiaugB0iaKsW1t8IEo5fQlvI9lY/640?wxtype=jpeg&wxfrom=0" alt="春节期间游戏行业 7 件核心大事回顾" loading="lazy" referrerpolicy="no-referrer">
+              
+            </div>
+
+            <div class="content">
+              <h3 class="title">
+                
+                  <a href="http://mp.weixin.qq.com/s?__biz=MjM5NTIzNjA2MA==&mid=2651801894&idx=1&sn=289e3d060739fb973754c95086eb8282&chksm=bc6423670e52d27d3ed29211bcf13fc84d7090c14ce41254a0fbd4837105cdcaa6ca67965544&scene=0&xtrack=1#rd" target="_blank" rel="noreferrer noopener">春节期间游戏行业 7 件核心大事回顾</a>
+                
+              </h3>
+
+              <div class="tags">
+                <span class="tag">借鉴点 2</span>
+                <span class="tag">外链</span>
+              </div>
+
+              
+                <p class="summary">文章盘点了 2026 年春节期间游戏行业的关键动态，分析了重要产品的节日表现及市场流量变化，为复盘春节档运营效果及后续开工规划提供参考。</p>
+              
+
+              
+                <details open>
+                  <summary>可借鉴内容</summary>
+                  <ul class="refer-list">
+                    
+                      <li class="refer-item">1. 春节档节点运营复盘 (【运营策略】) - 关键点：节日期间用户活跃规律 → 用于优化未来重大节假日（如国庆、春节）的小游戏限时活动节奏。</li>
+                    
+                      <li class="refer-item">2. 微信生态流量趋势 (【市场推广】) - 关键点：小程序原生环境下的用户增长表现 → 建议针对微信社交关系链优化春节期间的红包封面或邀请裂变机制。</li>
+                    
+                  </ul>
+                </details>
+              
+            </div>
+          </article>
+        
+      </div>
+    </section>
+  
+
+  <footer>
+    © GamePulse pipeline
+  </footer>
+
+</div>
+</body>
+</html>
