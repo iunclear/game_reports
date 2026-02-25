@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>GamePulse · 分类资讯洞察</title>
+<meta name="description" content="按【类别】分栏展示 · 单页 HTML（Jinja2 渲染）"/>
+
+<style>
+:root{
+  --bg:#0b1020;
+  --text:rgba(255,255,255,.92);
+  --muted:rgba(255,255,255,.65);
+  --line:rgba(255,255,255,.12);
+  --card:rgba(255,255,255,.06);
+  --radius:18px;
+  --shadow:0 16px 50px rgba(0,0,0,.45);
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:system-ui,-apple-system,"PingFang SC","Microsoft Yahei";
+  color:var(--text);
+  background:
+    radial-gradient(900px 400px at 20% 0%, rgba(124,58,237,.35), transparent 60%),
+    radial-gradient(800px 420px at 85% 10%, rgba(6,182,212,.25), transparent 60%),
+    linear-gradient(180deg,#060916,#0b1020,#060916);
+}
+
+a{color:inherit;text-decoration:none}
+a:hover{text-decoration:underline}
+
+.wrap{max-width:1120px;margin:auto;padding:28px 18px 60px}
+h1{margin:0;font-size:26px}
+.sub{color:var(--muted);font-size:13px;margin-top:6px}
+
+.topbar{
+  display:flex;
+  justify-content:space-between;
+  gap:16px;
+  flex-wrap:wrap;
+  align-items:flex-end;
+}
+.pill{
+  border:1px solid var(--line);
+  padding:8px 12px;
+  border-radius:999px;
+  font-size:12px;
+  color:var(--muted);
+  background:rgba(255,255,255,.04)
+}
+
+.section{margin-top:34px}
+.section-head{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  margin-bottom:16px;
+}
+.section-head h2{margin:0;font-size:20px}
+.section-head .count{
+  font-size:12px;
+  padding:6px 10px;
+  border-radius:999px;
+  border:1px solid var(--line);
+  color:var(--muted);
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(12,1fr);
+  gap:14px;
+}
+
+.card{
+  grid-column:span 12;
+  border-radius:var(--radius);
+  border:1px solid var(--line);
+  background:var(--card);
+  box-shadow:var(--shadow);
+  overflow:hidden;
+}
+@media(min-width:860px){.card{grid-column:span 6}}
+
+.cover{height:180px;background:rgba(255,255,255,.05)}
+.cover img{width:100%;height:100%;object-fit:cover;display:block}
+
+.content{
+  padding:14px;
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+.title{margin:0;font-size:16px;line-height:1.4}
+
+.tags{display:flex;gap:8px;flex-wrap:wrap}
+.tag{
+  font-size:12px;
+  padding:6px 10px;
+  border-radius:999px;
+  border:1px solid var(--line);
+  background:rgba(255,255,255,.04);
+  color:var(--muted);
+}
+
+.summary{font-size:13px;color:var(--muted);line-height:1.6;margin:0}
+
+details{
+  border:1px solid var(--line);
+  border-radius:14px;
+  padding:10px;
+  background:rgba(255,255,255,.03);
+}
+summary{cursor:pointer;font-size:13px}
+.refer-list{
+  margin-top:10px;
+  padding:0;
+  list-style:none;
+}
+.refer-item{
+  margin-top:8px;
+  border:1px solid var(--line);
+  border-radius:10px;
+  padding:10px;
+  background:rgba(255,255,255,.04);
+  font-size:13px;
+  line-height:1.5;
+}
+
+footer{
+  margin-top:40px;
+  text-align:center;
+  font-size:12px;
+  color:var(--muted);
+}
+</style>
+</head>
+
+<body>
+<div class="wrap">
+
+  <header class="topbar">
+    <div>
+      <h1>GamePulse · 分类资讯洞察</h1>
+      <div class="sub">按【类别】分栏展示 · 单页 HTML（Jinja2 渲染）</div>
+    </div>
+    <div style="display:flex;gap:10px;flex-wrap:wrap;justify-content:flex-end">
+      <div class="pill">生成时间：2026-02-25 06:50</div>
+      <div class="pill">文章数：2</div>
+    </div>
+  </header>
+
+  
+  
+  
+    
+    
+      
+    
+  
+    
+    
+  
+
+  
+    
+    <section class="section">
+      <div class="section-head">
+        <h2>小程序原生</h2>
+        <span class="count">2 篇</span>
+      </div>
+
+      <div class="grid">
+        
+          <article class="card">
+            <div class="cover">
+              
+                <img src="https://mmbiz.qpic.cn/mmbiz_jpg/LvguPLSUuXfyGuEJgrnN2NAeMPrWbSlLI6eqSmgD5e1B7xhcTMl6eobILTneU5E8vV8oNtnJMt0uDvkYaUDdRzDNIeZ2zJhIQib5a4yw2F4I/640?wxtype=jpeg&wxfrom=0" alt="2026春节档小游戏市场变局：榜单洗牌与新赛道风向" loading="lazy" referrerpolicy="no-referrer">
+              
+            </div>
+
+            <div class="content">
+              <h3 class="title">
+                
+                  <a href="http://mp.weixin.qq.com/s?__biz=MjM5NTIzNjA2MA==&mid=2651801937&idx=1&sn=9436e7e400512cb312b82d0793f79784&chksm=bcd6289fc898598f4d4c25d9acfb9efe18a33016c77cc51f1bbc665dcddb7403875bfe25e8c2&scene=0&xtrack=1#rd" target="_blank" rel="noreferrer noopener">2026春节档小游戏市场变局：榜单洗牌与新赛道风向</a>
+                
+              </h3>
+
+              <div class="tags">
+                <span class="tag">借鉴点 2</span>
+                <span class="tag">外链</span>
+              </div>
+
+              
+                <p class="summary">文章深度分析了2026年春节期间微信小游戏榜单的剧烈更替。曾经稳固的头部格局被打破，新兴品类凭借创新的社交玩法和节日运营策略成功上位。报告指出，小游戏正从纯轻度向具备高DAU潜力的“大风口”赛道转型，反映了用户审美和消费习惯的快速迁移。</p>
+              
+
+              
+                <details open>
+                  <summary>可借鉴内容</summary>
+                  <ul class="refer-list">
+                    
+                      <li class="refer-item">1. 节点突围运营策略 (【运营策略】) - 关键点：榜单第一易主 → 建议在法定长假期间，通过强化社交裂变机制抢夺流量洗牌期的头部位置。</li>
+                    
+                      <li class="refer-item">2. 高DAU潜力品类布局 (【市场推广】) - 关键点：新大风口出现 → 关注具备强互动、轻竞技属性的社交小游戏，利用微信原生环境优势实现低成本获客。</li>
+                    
+                  </ul>
+                </details>
+              
+            </div>
+          </article>
+        
+          <article class="card">
+            <div class="cover">
+              
+                <img src="https://mmbiz.qpic.cn/sz_mmbiz_jpg/LvguPLSUuXew4okR5PmvYfn4nibAhuEAVhX2M5QRESps29tJl8P4n64icuI6WlnzMesIr3ic7MphBJBL5B8EiaHr45uDm7hiay27TPKOCV81439Q/300?wxtype=jpeg&wxfrom=0" alt="年营收50亿SLG爆款复盘：霸榜8个月的长青运营之道" loading="lazy" referrerpolicy="no-referrer">
+              
+            </div>
+
+            <div class="content">
+              <h3 class="title">
+                
+                  <a href="http://mp.weixin.qq.com/s?__biz=MjM5NTIzNjA2MA==&mid=2651801937&idx=2&sn=2d076584c9107b3c1e9d641d5c187252&chksm=bc832da87082db7f43f440f243e34ba1785444d7eaf6560638403a266146b54f7573570bd82c&scene=0&xtrack=1#rd" target="_blank" rel="noreferrer noopener">年营收50亿SLG爆款复盘：霸榜8个月的长青运营之道</a>
+                
+              </h3>
+
+              <div class="tags">
+                <span class="tag">借鉴点 2</span>
+                <span class="tag">外链</span>
+              </div>
+
+              
+                <p class="summary">文章详细解析了一款上线一年、累计创收50亿元的SLG小游戏标杆案例。该产品通过极致的数值调优、连续8个月的长效霸榜表现，证明了重度品类在小程序生态下的变现上限。重点讨论了其在用户留存及商业化平衡上的核心竞争力。</p>
+              
+
+              
+                <details open>
+                  <summary>可借鉴内容</summary>
+                  <ul class="refer-list">
+                    
+                      <li class="refer-item">1. SLG长效留存机制 (【运营策略】) - 关键点：连续8个月霸榜 → 通过赛季制（Season-based）运营及强联盟社交，解决重度游戏在小游戏端的长线留存难题。</li>
+                    
+                      <li class="refer-item">2. 高净值用户商业化模型 (【市场推广】) - 关键点：50亿营收指标 → 建议在原生小程序开发中，建立深度付费与广告激励的混合模型，最大化SLG品类的ARPU值。</li>
+                    
+                  </ul>
+                </details>
+              
+            </div>
+          </article>
+        
+      </div>
+    </section>
+  
+
+  <footer>
+    © GamePulse pipeline
+  </footer>
+
+</div>
+</body>
+</html>
